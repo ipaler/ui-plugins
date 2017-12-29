@@ -1,18 +1,20 @@
 <!DOCTYPE html>
-<html style="background-color: #FFFFFF;">
-
+<html>
 	<head>
 		<meta charset="utf-8">
 		<title>DIY在线工具</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-		<meta name="keywords" content="Geek,DIY,DIY在线工具">
-		<meta name="description" content="DIY在线工具 ...">
+		<meta name="keywords" content="Geek,DIY,Geek DIY">
+		<meta name="description" content="Geek DIY ...">
 		<link rel="stylesheet" href="../res/layui/css/layui.css">
 		<link rel="stylesheet" href="../res/css/global.css">
 	</head>
 
 	<body>
-		<div class="fly-header layui-bg-green">
+		<div class="fly-header layui-bg-black">
+			<div class="layui-container">
+				
+			</div>
 			<div class="layui-container">
 				<a class="fly-logo" href="/">
 					<img src="../res/images/logo.png" alt="layui">
@@ -26,12 +28,6 @@
 					</li>
 					<li class="layui-nav-item">
 						<a href="case/case.html"><i class="iconfont icon-iconmingxinganli"></i>案例</a>
-					</li>
-					<li class="layui-nav-item">
-						<a href="index.html"><i class="iconfont icon-biaoqing"></i>API</a>
-					</li>
-					<li class="layui-nav-item">
-						<a href="index.html"><i class="iconfont icon-aqrenzheng"></i>备案查询</a>
 					</li>
 				</ul>
 
@@ -75,71 +71,50 @@
 				</ul>
 			</div>
 		</div>
-		<div class="fly-panel layui-hide-xs">
-			<div class="layui-container">
-				<img src="//res.layui.com/images/layui/demo/1.png" height="120px">
-				<img src="//res.layui.com/images/layui/demo/2.png" height="120px">
-				<img src="//res.layui.com/images/layui/demo/3.png" height="120px">
-				<img src="//res.layui.com/images/layui/demo/4.png" height="120px">
-				<img src="//res.layui.com/images/layui/demo/5.png" height="120px">
-			</div>
+		<div class="fly-panel fly-column">
+			
 		</div>
-
-		<div class="fly-panel fly-column" style="border: 1px solid #408140;">
+		<div class="fly-panel fly-column">
 			<div class="layui-container">
-				<ul class="layui-nav layui-bg-green layui-hide-xs">
-					<li class="layui-nav-item">
-						<a href="index.html" class="layui-this">在线工具</a>
+				<ul class="layui-clear">
+					<li class="layui-hide-xs layui-this">
+						<a href="/">首页</a>
 					</li>
-					<li class="layui-nav-item ">
-						<a href="javascript:;">解密/加密</a>
-						<dl class="layui-nav-child">
-							<dd>
-								<a href="">散列/哈希</a>
-							</dd>
-							<dd>
-								<a href="">进制转换</a>
-							</dd>
-							<dd>
-								<a href="">图片转Base64</a>
-							</dd>
-						</dl>
+					<li>
+						<a href="jie/index.html">提问</a>
 					</li>
-					<li class="layui-nav-item">
-						<a href="javascript:;">压缩/格式化</a>
-						<dl class="layui-nav-child">
-							<dd>
-								<a href="">JS/HTML格式化、压缩</a>
-							</dd>
-							<dd>
-								<a href="">CSS格式化、压缩</a>
-							</dd>
-							<dd>
-								<a href="">XML格式化、压缩</a>
-							</dd>
-						</dl>
+					<li>
+						<a href="jie/index.html">分享<span class="layui-badge-dot"></span></a>
 					</li>
-					<li class="layui-nav-item">
-						<a href="javascript:;">二维码</a>
-						<dl class="layui-nav-child">
-							<dd>
-								<a href="">二维码生成</a>
-							</dd>
-							<dd>
-								<a href="">二维码美化</a>
-							</dd>
-							<dd class="layui-this">
-								<a href="">二维码解码</a>
-							</dd>
-						</dl>
+					<li>
+						<a href="jie/index.html">讨论</a>
 					</li>
-					<li class="layui-nav-item">
-						<a href="">站长工具</a>
+					<li>
+						<a href="jie/index.html">建议</a>
+					</li>
+					<li>
+						<a href="jie/index.html">公告</a>
+					</li>
+					<li>
+						<a href="jie/index.html">动态</a>
+					</li>
+					<li class="layui-hide-xs layui-hide-sm layui-show-md-inline-block"><span class="fly-mid"></span></li>
+
+					<!-- 用户登入后显示 -->
+					<li class="layui-hide-xs layui-hide-sm layui-show-md-inline-block">
+						<a href="user/index.html">我发表的贴</a>
+					</li>
+					<li class="layui-hide-xs layui-hide-sm layui-show-md-inline-block">
+						<a href="user/index.html#collection">我收藏的贴</a>
 					</li>
 				</ul>
 
 				<div class="fly-column-right layui-hide-xs">
 					<span class="fly-search"><i class="layui-icon"></i></span>
+					<a href="jie/add.html" class="layui-btn">发表新帖</a>
+				</div>
+				<div class="layui-hide-sm layui-show-xs-block" style="margin-top: -10px; padding-bottom: 10px; text-align: center;">
+					<a href="jie/add.html" class="layui-btn">发表新帖</a>
 				</div>
 			</div>
 		</div>
@@ -147,24 +122,6 @@
 		<div class="layui-container">
 			<div class="layui-row layui-col-space15">
 				<div class="layui-col-md8">
-					<div class="fly-panel">
-						<div class="layui-tab layui-tab-brief" lay-filter="docDemoTabBrief">
-						  <ul class="layui-tab-title">
-						    <li class="layui-this">内容1</li>
-						    <li>内容2</li>
-						    <li>内容3</li>
-						    <li>内容4</li>
-						    <li>内容5</li>
-						  </ul>
-						  <div class="layui-tab-content" style="height: 100px;">
-						    <div class="layui-tab-item layui-show">内容不一样是要有，因为你可以监听tab事件</div>
-						    <div class="layui-tab-item">内容2</div>
-						    <div class="layui-tab-item">内容3</div>
-						    <div class="layui-tab-item">内容4</div>
-						    <div class="layui-tab-item">内容5</div>
-						  </div>
-						</div> 
-					</div>
 					<div class="fly-panel">
 						<div class="fly-panel-title fly-filter">
 							<a>置顶</a>
@@ -823,10 +780,10 @@
 
 					<div class="fly-panel">
 						<div class="fly-panel-title">
-							广告区域
+							这里可作为广告区域
 						</div>
 						<div class="fly-panel-main">
-							<a href="#" target="_blank" class="fly-zanzhu" time-limit="2017.09.25-2099.01.01" style="background-color: #5FB878;">广告区域</a>
+							<a href="http://layim.layui.com/?from=fly" target="_blank" class="fly-zanzhu" time-limit="2017.09.25-2099.01.01" style="background-color: #5FB878;">LayIM 3.0 - layui 旗舰之作</a>
 						</div>
 					</div>
 
